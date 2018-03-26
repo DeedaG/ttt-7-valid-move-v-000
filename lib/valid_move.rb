@@ -4,9 +4,9 @@ def valid_move?(board, index)
   if index.between?(0,8) == false
     false || nil
 
-  else position_taken?(board,index) == false
+  elsif position_taken?(board,index) == false
     true
-  elsif position_taken?(board,index) == true
+  else position_taken?(board,index) == true
     false || nil
   end
 end
